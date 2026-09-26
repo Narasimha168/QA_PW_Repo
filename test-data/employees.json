@@ -1,0 +1,12 @@
+[
+  {
+    "scenario": "New QA hire",
+    "firstName": "Aarav",
+    "middleName": "Kumar",
+    "lastName": "Sharma",
+    "employeeIdTemplate": "T{{unique}}",
+    "profilePicture": "assets/employee-avatar.png",
+    "jobTitle": "QA Engineer",
+    "employmentStatus": "Full-Time Permanent"
+  }
+]

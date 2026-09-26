@@ -1,0 +1,44 @@
+{
+  "name": "orangehrm-playwright-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UI + API end-to-end automation framework for the OrangeHRM demo application, built with Playwright Test and the Page Object Model.",
+  "keywords": [
+    "playwright",
+    "typescript",
+    "page-object-model",
+    "qa-automation",
+    "orangehrm"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "scripts": {
+    "pretest": "npm run typecheck",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "install:browsers": "playwright install --with-deps chromium",
+    "report": "playwright show-report reports/html-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,json,md}\"",
+    "clean": "rm -rf reports"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.44.1",
+    "@types/node": "16.18.101",
+    "@typescript-eslint/eslint-plugin": "7.13.1",
+    "@typescript-eslint/parser": "7.13.1",
+    "dotenv": "16.4.5",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-playwright": "1.6.2",
+    "prettier": "3.3.2",
+    "typescript": "5.4.5"
+  }
+}
