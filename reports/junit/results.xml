@@ -1,0 +1,17 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="40.846728000000006">
+<testsuite name="e2e/employee-lifecycle.spec.ts" timestamp="2026-09-26T10:42:23.211Z" hostname="chromium" tests="1" failures="0" skipped="0" time="40.159" errors="0">
+<testcase name="Employee Lifecycle Management › New QA hire: Aarav Sharma" classname="e2e/employee-lifecycle.spec.ts" time="40.159">
+<properties>
+<property name="employeeId" value="T344025463">
+</property>
+<property name="empNumber" value="263">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-artifacts/e2e-employee-lifecycle-Emp-cd991-nt-New-QA-hire-Aarav-Sharma-chromium/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

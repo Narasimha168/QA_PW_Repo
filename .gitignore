@@ -1,0 +1,24 @@
+node_modules/
+.env
+
+# The evidence pack IS a deliverable and is committed on purpose:
+#   reports/html-report/  Playwright HTML report (video embedded)
+#   reports/videos/       human-readable copy of each run recording
+#   reports/junit/        JUnit XML
+#   reports/json/         machine-readable results
+#
+# Only Playwright's raw scratch directory is excluded — it holds a byte-identical
+# duplicate of every video plus failure-only traces, and is regenerated each run.
+/reports/test-artifacts/
+
+# Playwright defaults we do not use (kept so stray runs cannot pollute the repo)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/
+*.log

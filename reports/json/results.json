@@ -1,0 +1,210 @@
+{
+  "config": {
+    "configFile": "/Users/code/Desktop/PW repo/QA_PW_Repo/playwright.config.ts",
+    "rootDir": "/Users/code/Desktop/PW repo/QA_PW_Repo/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 1800000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit/results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json/results.json"
+        }
+      ],
+      [
+        "/Users/code/Desktop/PW repo/QA_PW_Repo/src/reporters/video-collector.reporter.ts",
+        {
+          "outputFolder": "reports/videos"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/code/Desktop/PW repo/QA_PW_Repo/reports/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/code/Desktop/PW repo/QA_PW_Repo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e/employee-lifecycle.spec.ts",
+      "file": "e2e/employee-lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Employee Lifecycle Management",
+          "file": "e2e/employee-lifecycle.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "New QA hire: Aarav Sharma",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [
+                    {
+                      "type": "employeeId",
+                      "description": "T344025463"
+                    },
+                    {
+                      "type": "empNumber",
+                      "description": "263"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 40159,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Log in with valid credentials",
+                          "duration": 5277
+                        },
+                        {
+                          "title": "2. Add a new employee from the data file",
+                          "duration": 7596
+                        },
+                        {
+                          "title": "2b. Confirm the new record is discoverable in the Employee List",
+                          "duration": 2211
+                        },
+                        {
+                          "title": "3. Edit the employee job title and employment status",
+                          "duration": 7412
+                        },
+                        {
+                          "title": "4. Cross-check the employee against the OrangeHRM REST API",
+                          "duration": 3691
+                        },
+                        {
+                          "title": "5. Delete the employee and verify removal in the UI and the API",
+                          "duration": 9787
+                        },
+                        {
+                          "title": "6. Log out and confirm the session is invalidated",
+                          "duration": 2577
+                        }
+                      ],
+                      "startTime": "2026-09-26T10:42:23.410Z",
+                      "attachments": [
+                        {
+                          "name": "API · personal details",
+                          "contentType": "application/json",
+                          "body": "ewogICJ1cmwiOiAiL3dlYi9pbmRleC5waHAvYXBpL3YyL3BpbS9lbXBsb3llZXMvMjYzL3BlcnNvbmFsLWRldGFpbHMiLAogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAiZGF0YSI6IHsKICAgICAgImVtcE51bWJlciI6IDI2MywKICAgICAgImxhc3ROYW1lIjogIlNoYXJtYSIsCiAgICAgICJmaXJzdE5hbWUiOiAiQWFyYXYiLAogICAgICAibWlkZGxlTmFtZSI6ICJLdW1hciIsCiAgICAgICJlbXBsb3llZUlkIjogIlQzNDQwMjU0NjMiLAogICAgICAib3RoZXJJZCI6ICIiLAogICAgICAiZHJpdmluZ0xpY2Vuc2VObyI6ICIiLAogICAgICAiZHJpdmluZ0xpY2Vuc2VFeHBpcmVkRGF0ZSI6IG51bGwsCiAgICAgICJnZW5kZXIiOiBudWxsLAogICAgICAibWFyaXRhbFN0YXR1cyI6IG51bGwsCiAgICAgICJiaXJ0aGRheSI6IG51bGwsCiAgICAgICJ0ZXJtaW5hdGlvbklkIjogbnVsbCwKICAgICAgIm5hdGlvbmFsaXR5IjogewogICAgICAgICJpZCI6IG51bGwsCiAgICAgICAgIm5hbWUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICAibWV0YSI6IFtdLAogICAgInJlbHMiOiBbXQogIH0KfQ=="
+                        },
+                        {
+                          "name": "API · job details",
+                          "contentType": "application/json",
+                          "body": "ewogICJ1cmwiOiAiL3dlYi9pbmRleC5waHAvYXBpL3YyL3BpbS9lbXBsb3llZXMvMjYzL2pvYi1kZXRhaWxzIiwKICAic3RhdHVzIjogMjAwLAogICJib2R5IjogewogICAgImRhdGEiOiB7CiAgICAgICJlbXBOdW1iZXIiOiAyNjMsCiAgICAgICJqb2luZWREYXRlIjogbnVsbCwKICAgICAgImpvYlRpdGxlIjogewogICAgICAgICJpZCI6IDksCiAgICAgICAgInRpdGxlIjogIlFBIEVuZ2luZWVyIiwKICAgICAgICAiaXNEZWxldGVkIjogZmFsc2UKICAgICAgfSwKICAgICAgImpvYlNwZWNpZmljYXRpb25BdHRhY2htZW50IjogewogICAgICAgICJpZCI6IG51bGwsCiAgICAgICAgImZpbGVuYW1lIjogbnVsbAogICAgICB9LAogICAgICAiZW1wU3RhdHVzIjogewogICAgICAgICJpZCI6IDMsCiAgICAgICAgIm5hbWUiOiAiRnVsbC1UaW1lIFBlcm1hbmVudCIKICAgICAgfSwKICAgICAgImpvYkNhdGVnb3J5IjogewogICAgICAgICJpZCI6IG51bGwsCiAgICAgICAgIm5hbWUiOiBudWxsCiAgICAgIH0sCiAgICAgICJzdWJ1bml0IjogewogICAgICAgICJpZCI6IG51bGwsCiAgICAgICAgIm5hbWUiOiBudWxsLAogICAgICAgICJ1bml0SWQiOiBudWxsCiAgICAgIH0sCiAgICAgICJsb2NhdGlvbiI6IHsKICAgICAgICAiaWQiOiBudWxsLAogICAgICAgICJuYW1lIjogbnVsbAogICAgICB9LAogICAgICAiZW1wbG95ZWVUZXJtaW5hdGlvblJlY29yZCI6IHsKICAgICAgICAiaWQiOiBudWxsLAogICAgICAgICJkYXRlIjogbnVsbAogICAgICB9CiAgICB9LAogICAgIm1ldGEiOiBbXSwKICAgICJyZWxzIjogW10KICB9Cn0="
+                        },
+                        {
+                          "name": "API · search employeeId=T344025463",
+                          "contentType": "application/json",
+                          "body": "ewogICJ1cmwiOiAiL3dlYi9pbmRleC5waHAvYXBpL3YyL3BpbS9lbXBsb3llZXM/bGltaXQ9NTAmb2Zmc2V0PTAmbW9kZWw9ZGV0YWlsZWQmaW5jbHVkZUVtcGxveWVlcz1vbmx5Q3VycmVudCZlbXBsb3llZUlkPVQzNDQwMjU0NjMiLAogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAiZGF0YSI6IFsKICAgICAgewogICAgICAgICJlbXBOdW1iZXIiOiAyNjMsCiAgICAgICAgImxhc3ROYW1lIjogIlNoYXJtYSIsCiAgICAgICAgImZpcnN0TmFtZSI6ICJBYXJhdiIsCiAgICAgICAgIm1pZGRsZU5hbWUiOiAiS3VtYXIiLAogICAgICAgICJlbXBsb3llZUlkIjogIlQzNDQwMjU0NjMiLAogICAgICAgICJ0ZXJtaW5hdGlvbklkIjogbnVsbCwKICAgICAgICAiam9iVGl0bGUiOiB7CiAgICAgICAgICAiaWQiOiA5LAogICAgICAgICAgInRpdGxlIjogIlFBIEVuZ2luZWVyIiwKICAgICAgICAgICJpc0RlbGV0ZWQiOiBmYWxzZQogICAgICAgIH0sCiAgICAgICAgInN1YnVuaXQiOiB7CiAgICAgICAgICAiaWQiOiBudWxsLAogICAgICAgICAgIm5hbWUiOiBudWxsCiAgICAgICAgfSwKICAgICAgICAiZW1wU3RhdHVzIjogewogICAgICAgICAgImlkIjogMywKICAgICAgICAgICJuYW1lIjogIkZ1bGwtVGltZSBQZXJtYW5lbnQiCiAgICAgICAgfSwKICAgICAgICAic3VwZXJ2aXNvcnMiOiBbXQogICAgICB9CiAgICBdLAogICAgIm1ldGEiOiB7CiAgICAgICJ0b3RhbCI6IDEKICAgIH0sCiAgICAicmVscyI6IFtdCiAgfQp9"
+                        },
+                        {
+                          "name": "API · search employeeId=T344025463",
+                          "contentType": "application/json",
+                          "body": "ewogICJ1cmwiOiAiL3dlYi9pbmRleC5waHAvYXBpL3YyL3BpbS9lbXBsb3llZXM/bGltaXQ9NTAmb2Zmc2V0PTAmbW9kZWw9ZGV0YWlsZWQmaW5jbHVkZUVtcGxveWVlcz1vbmx5Q3VycmVudCZlbXBsb3llZUlkPVQzNDQwMjU0NjMiLAogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAiZGF0YSI6IFtdLAogICAgIm1ldGEiOiB7CiAgICAgICJ0b3RhbCI6IDAKICAgIH0sCiAgICAicmVscyI6IFtdCiAgfQp9"
+                        },
+                        {
+                          "name": "API · personal details",
+                          "contentType": "application/json",
+                          "body": "ewogICJ1cmwiOiAiL3dlYi9pbmRleC5waHAvYXBpL3YyL3BpbS9lbXBsb3llZXMvMjYzL3BlcnNvbmFsLWRldGFpbHMiLAogICJzdGF0dXMiOiA0MjIsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiB7CiAgICAgICJzdGF0dXMiOiAiNDIyIiwKICAgICAgIm1lc3NhZ2UiOiAiSW52YWxpZCBQYXJhbWV0ZXIiLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaW52YWxpZFBhcmFtS2V5cyI6IFsKICAgICAgICAgICJlbXBOdW1iZXIiCiAgICAgICAgXQogICAgICB9CiAgICB9CiAgfQp9"
+                        },
+                        {
+                          "name": "API · session probe after logout",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDEsCiAgImZpbmFsVXJsIjogImh0dHBzOi8vb3BlbnNvdXJjZS1kZW1vLm9yYW5nZWhybWxpdmUuY29tL3dlYi9pbmRleC5waHAvYXBpL3YyL3BpbS9lbXBsb3llZXM/bGltaXQ9MSZvZmZzZXQ9MCIsCiAgImNvbnRlbnRUeXBlIjogImFwcGxpY2F0aW9uL2pzb24iCn0="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/code/Desktop/PW repo/QA_PW_Repo/reports/test-artifacts/e2e-employee-lifecycle-Emp-cd991-nt-New-QA-hire-Aarav-Sharma-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e0b78a095d1464f80a9-461b3648a555e4f13392",
+              "file": "e2e/employee-lifecycle.spec.ts",
+              "line": 33,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-26T10:42:23.186Z",
+    "duration": 40846.728,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
